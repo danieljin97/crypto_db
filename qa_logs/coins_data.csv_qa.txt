@@ -1,0 +1,83 @@
+==================================================
+📊 QA Report for coins_data.csv
+==================================================
+Rows: 20, Columns: 47
+
+Columns and Data Types:
+ - coin_id: String
+ - coin_symbol: String
+ - coin_name: String
+ - asset_platform_id: String
+ - block_time_in_minutes: Int64
+ - hashing_algorithm: String
+ - links_twitter: String
+ - links_reddit: String
+ - country_origin: String
+ - genesis_date: String
+ - sentiment_votes_up_percentage: Float64
+ - sentiment_votes_down_percentage: Float64
+ - watchlist_portfolio_users: Int64
+ - market_cap_rank: Int64
+ - market_current_price: Float64
+ - market_ath: Float64
+ - market_ath_date: String
+ - market_atl: Float64
+ - market_atl_date: String
+ - market_market_cap: Float64
+ - market_fully_diluted_valuation: Float64
+ - market_total_volume: Float64
+ - market_high_24h: Float64
+ - market_low_24h: Float64
+ - market_price_change_24h: Float64
+ - market_price_change_percentage_24h: Float64
+ - market_price_change_percentage_7d: Float64
+ - market_price_change_percentage_14d: Float64
+ - market_price_change_percentage_30d: Float64
+ - market_price_change_percentage_60d: Float64
+ - market_price_change_percentage_200d: Float64
+ - market_price_change_percentage_1y: Float64
+ - market_market_cap_change_24h: Float64
+ - market_market_cap_change_percentage_24h: Float64
+ - market_total_supply: Float64
+ - market_max_supply: Float64
+ - market_circulating_supply: Float64
+ - market_last_updated: String
+ - dev_forks: Int64
+ - dev_stars: Int64
+ - dev_subscribers: Int64
+ - dev_total_issues: Int64
+ - dev_closed_issues: Int64
+ - dev_pull_requests_merged: Int64
+ - dev_pull_requests_contributors: String
+ - dev_commit_count_4_weeks: Int64
+ - ingestion_date: String
+
+Null Counts:
+shape: (1, 47)
+┌─────────┬─────────────┬───────────┬───────────────────┬───┬──────────────────────────┬────────────────────────────────┬──────────────────────────┬────────────────┐
+│ coin_id ┆ coin_symbol ┆ coin_name ┆ asset_platform_id ┆ … ┆ dev_pull_requests_merged ┆ dev_pull_requests_contributors ┆ dev_commit_count_4_weeks ┆ ingestion_date │
+│ ---     ┆ ---         ┆ ---       ┆ ---               ┆   ┆ ---                      ┆ ---                            ┆ ---                      ┆ ---            │
+│ u32     ┆ u32         ┆ u32       ┆ u32               ┆   ┆ u32                      ┆ u32                            ┆ u32                      ┆ u32            │
+╞═════════╪═════════════╪═══════════╪═══════════════════╪═══╪══════════════════════════╪════════════════════════════════╪══════════════════════════╪════════════════╡
+│ 0       ┆ 0           ┆ 0         ┆ 3                 ┆ … ┆ 0                        ┆ 20                             ┆ 0                        ┆ 0              │
+└─────────┴─────────────┴───────────┴───────────────────┴───┴──────────────────────────┴────────────────────────────────┴──────────────────────────┴────────────────┘
+
+Duplicate rows: 0
+
+Basic Statistics:
+shape: (9, 48)
+┌────────────┬─────────┬─────────────┬─────────────────────┬───┬──────────────────────────┬────────────────────────────────┬──────────────────────────┬────────────────┐
+│ statistic  ┆ coin_id ┆ coin_symbol ┆ coin_name           ┆ … ┆ dev_pull_requests_merged ┆ dev_pull_requests_contributors ┆ dev_commit_count_4_weeks ┆ ingestion_date │
+│ ---        ┆ ---     ┆ ---         ┆ ---                 ┆   ┆ ---                      ┆ ---                            ┆ ---                      ┆ ---            │
+│ str        ┆ str     ┆ str         ┆ str                 ┆   ┆ f64                      ┆ str                            ┆ f64                      ┆ str            │
+╞════════════╪═════════╪═════════════╪═════════════════════╪═══╪══════════════════════════╪════════════════════════════════╪══════════════════════════╪════════════════╡
+│ count      ┆ 20      ┆ 20          ┆ 20                  ┆ … ┆ 20.0                     ┆ 0                              ┆ 20.0                     ┆ 20             │
+│ null_count ┆ 0       ┆ 0           ┆ 0                   ┆ … ┆ 0.0                      ┆ 20                             ┆ 0.0                      ┆ 0              │
+│ mean       ┆ null    ┆ null        ┆ null                ┆ … ┆ 90.75                    ┆ null                           ┆ 0.3                      ┆ null           │
+│ std        ┆ null    ┆ null        ┆ null                ┆ … ┆ 402.796916               ┆ null                           ┆ 1.341641                 ┆ null           │
+│ min        ┆ -10     ┆ 000         ┆ 0 Knowledge Network ┆ … ┆ 0.0                      ┆ null                           ┆ 0.0                      ┆ 2025-08-26     │
+│ 25%        ┆ null    ┆ null        ┆ null                ┆ … ┆ 0.0                      ┆ null                           ┆ 0.0                      ┆ null           │
+│ 50%        ┆ null    ┆ null        ┆ null                ┆ … ┆ 0.0                      ┆ null                           ┆ 0.0                      ┆ null           │
+│ 75%        ┆ null    ┆ null        ┆ null                ┆ … ┆ 0.0                      ┆ null                           ┆ 0.0                      ┆ null           │
+│ max        ┆ _       ┆ zrx         ┆ 龙                  ┆ … ┆ 1802.0                   ┆ null                           ┆ 6.0                      ┆ 2025-08-26     │
+└────────────┴─────────┴─────────────┴─────────────────────┴───┴──────────────────────────┴────────────────────────────────┴──────────────────────────┴────────────────┘

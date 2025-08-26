@@ -1,0 +1,40 @@
+==================================================
+📊 QA Report for currencies.csv
+==================================================
+Rows: 18413, Columns: 4
+
+Columns and Data Types:
+ - coin_id: String
+ - coin_name: String
+ - coin_symbol: String
+ - ingestion_date: String
+
+Null Counts:
+shape: (1, 4)
+┌─────────┬───────────┬─────────────┬────────────────┐
+│ coin_id ┆ coin_name ┆ coin_symbol ┆ ingestion_date │
+│ ---     ┆ ---       ┆ ---         ┆ ---            │
+│ u32     ┆ u32       ┆ u32         ┆ u32            │
+╞═════════╪═══════════╪═════════════╪════════════════╡
+│ 0       ┆ 0         ┆ 0           ┆ 0              │
+└─────────┴───────────┴─────────────┴────────────────┘
+
+Duplicate rows: 0
+
+Basic Statistics:
+shape: (9, 5)
+┌────────────┬─────────┬──────────────┬─────────────┬────────────────┐
+│ statistic  ┆ coin_id ┆ coin_name    ┆ coin_symbol ┆ ingestion_date │
+│ ---        ┆ ---     ┆ ---          ┆ ---         ┆ ---            │
+│ str        ┆ str     ┆ str          ┆ str         ┆ str            │
+╞════════════╪═════════╪══════════════╪═════════════╪════════════════╡
+│ count      ┆ 18413   ┆ 18413        ┆ 18413       ┆ 18413          │
+│ null_count ┆ 0       ┆ 0            ┆ 0           ┆ 0              │
+│ mean       ┆ null    ┆ null         ┆ null        ┆ null           │
+│ std        ┆ null    ┆ null         ┆ null        ┆ null           │
+│ min        ┆ -10     ┆ "　"         ┆ !           ┆ 2025-08-26     │
+│ 25%        ┆ null    ┆ null         ┆ null        ┆ null           │
+│ 50%        ┆ null    ┆ null         ┆ null        ┆ null           │
+│ 75%        ┆ null    ┆ null         ┆ null        ┆ null           │
+│ max        ┆ zyro-2  ┆ 🟥🟪🟦🟩🟨🟧 ┆ 🦝          ┆ 2025-08-26     │
+└────────────┴─────────┴──────────────┴─────────────┴────────────────┘
