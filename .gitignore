@@ -1,4 +1,10 @@
 # Ignore folders
 Venv/
-__pychace__/
+__pycache__/
+.vscode/
+
+# ignore files
+.DS_Store
+.env
+.python-version
 
