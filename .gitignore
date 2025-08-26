@@ -1,0 +1,4 @@
+# Ignore folders
+Venv/
+__pychace__/
+
